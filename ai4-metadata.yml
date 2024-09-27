@@ -2,7 +2,6 @@ metadata_version: 2.0.0
 title: Cold coral segmentation
 summary: "Cold corals segmentation model"
 description: |-
-  cold_coral_segmentation is an application using the DEEPaaS API.
   Cold corals segmentation model
 # doi: http://add-some-DOI-url.com
 dates:
