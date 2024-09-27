@@ -6,8 +6,8 @@ description: |-
   Cold corals segmentation model
 # doi: http://add-some-DOI-url.com
 dates:
-  created: 2024-09-27
-  updated: 2024-09-27
+  created: '2024-09-27'
+  updated: '2024-09-27'
 links:
   ai4_template: ai4-template-child/2.1.1
   source_code: https://github.com/ai4os-hub/cold-coral-segmentation
