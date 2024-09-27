@@ -1,0 +1,37 @@
+{
+    "title": "Cold coral segmentation",
+    "summary": "Cold corals segmentation model",
+    "description": [
+        "cold-coral-segmentation is an application using the DEEPaaS API.\n",
+        "Cold corals segmentation model"
+    ],
+    "keywords": [
+        "docker",
+        "api-v2"
+    ],
+    "license": "Apache 2.0",
+    "date_creation": "2024-09-27",
+    "sources": {
+        "dockerfile_repo": "https://github.com/ai4os-hub/cold-coral-segmentation",
+        "docker_registry_repo": "ai4oshub/cold-coral-segmentation",
+        "code": "https://github.com/ai4os-hub/cold-coral-segmentation",
+        "ai4_template": "ai4-template-child/2.1.1"
+	},
+    "continuous_integration": {
+        "build_status_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=AI4OS-hub/cold-coral-segmentation/main",
+        "build_status_url": "https://jenkins.services.ai4os.eu/job/AI4OS-hub/job/cold-coral-segmentation/job/main/"
+    },
+    "tosca": [
+        {
+            "title": "Mesos (CPU)",
+            "url": "https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-marathon-webdav.yml",
+            "inputs": [
+                "rclone_conf",
+                "rclone_url",
+                "rclone_vendor",
+                "rclone_user",
+                "rclone_pass"
+            ]
+        }
+    ]
+}
