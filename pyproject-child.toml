@@ -18,7 +18,7 @@ dynamic = ["version", "dependencies"]
 
 # Add author and author email here
 authors = [
-  {name= "Alberto Gaya Vilar", email= "alberto.gaya@ieo.csic.es"}
+  {name= "Alberto Gaya Vilar", email= "alberto.gaya@ieo.csic.es"},
   {name= "Fahimeh Alibabaei", email= "khadijeh.alibabaei@kit.edu"},
   {name= "Lisana Berberi", email= "lisana.berberi@kit.edu"},
 ]
