@@ -18,6 +18,7 @@ links:
   # base_model: http://add-some-link-to-another-model.com
 tags:        # required property, add user-defined tags that you consider relevant
    - deep learning
+   - vo.imagine-ai.eu
 tasks:       # required property, uncomment together with relevant items
    - Computer Vision
   # - Natural Language Processing
