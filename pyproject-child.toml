@@ -3,11 +3,11 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cold-coral-segmentation"
-description = "AI-based fish detection and classification algorithm based on YOLOv8"
+name = "cold_coral_segmentation"
+description = "Cold corals segmentation model"
 readme = "README.md"
 requires-python = ">=3.8"
-license = { text = "MIT" }
+license = { text = "Apache 2.0" }
 classifiers = [
     "Intended Audience :: Information Technology",
     "Intended Audience :: AI/ML/DL Researchers",
@@ -21,14 +21,11 @@ authors = [
   {name= "Alberto Gaya Vilar", email= "alberto.gaya@ieo.csic.es"}
   {name= "Fahimeh Alibabaei", email= "khadijeh.alibabaei@kit.edu"},
   {name= "Lisana Berberi", email= "lisana.berberi@kit.edu"},
-  {name = "Enoc Martinez", email = "enoc.martinez@upc.edu"},
-  {name = "Oriol Prat Bayarri", email = "oriol.prat.bayarri@upc.edu"},
-  {name = "Pol Banos Castello", email = "pol.banos.castello@upc.edu"},
 ]
 
 [project.urls]
-"Homepage" = "https://codebase.helmholtz.cloud/m-team/ai/obsea-fish-detection"
-"Bug Tracker" = "https://codebase.helmholtz.cloud/m-team/ai/obsea-fish-detection/issues"
+"Homepage" = "https://github.com/ai4os-hub/cold-coral-segmentation/"
+"Bug Tracker" = "https://github.com/ai4os-hub/cold-coral-segmentation/issues"
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
@@ -36,10 +33,10 @@ env = ["DATA_PATH=tests/data", "MODELS_PATH=tests/models"]
 addopts = "--import-mode=importlib"
 
 [tool.setuptools]
-packages = ["yolov8_api", "obsea_fish_detection.api"]
+packages = ["yolov8_api", "cold_coral_segmentation.api"]
 
 [tool.setuptools.package-dir]
-"obsea_fish_detection.api" = "api"
+"cold_coral_segmentation.api" = "api"
 "yolov8_api" = "yolov8_api"
 
 [tool.setuptools.dynamic]
@@ -47,4 +44,4 @@ dependencies = { file = ["requirements.txt"] }
 version = { file = "VERSION" }
 
 [project.entry-points."deepaas.v2.model"]
-obsea_fish_detection = "obsea_fish_detection.api"
+cold_coral_segmentation = "cold_coral_segmentation.api"

@@ -24,23 +24,20 @@ LABEL version='0.0.1'
 ### FILL ME ###
 ###############
 # Define default YoloV8 models
-ENV YOLOV8_DEFAULT_WEIGHTS="yolov8_obsea_nano,yolov8_obsea_xlarge"
-ENV YOLOV8_DEFAULT_TASK_TYPE="det"
+ENV YOLOV8_DEFAULT_WEIGHTS="yolov8_corals_large"
+ENV YOLOV8_DEFAULT_TASK_TYPE="seg"
 
 # Uninstall existing module ("yolov8_api")
-# Update MODEL_NAME to obsea_fish_detection
-# Copy updated pyproject.toml to include OBSEA authors and rename the module
+# Update MODEL_NAME to cold_coral_segmentation
+# Copy updated pyproject.toml to include cold_coral_segmentation authors and rename the module
 # Re-install application with the updated pyproject.toml
 RUN cd /srv/ai4os-yolov8-torch && \
     module=$(cat pyproject.toml |grep '\[project\]' -A1 |grep 'name' | cut -d'=' -f2 |tr -d ' ' |tr -d '"') && \
     pip uninstall -y $module
-ENV MODEL_NAME="obsea_fish_detection"
+ENV MODEL_NAME="cold_coral_segmentation"
 COPY ./pyproject-child.toml /srv/ai4os-yolov8-torch/pyproject.toml
 RUN cd /srv/ai4os-yolov8-torch && pip install --no-cache -e .
 
-RUN mkdir -p /srv/ai4os-yolov8-torch/models/yolov8_obsea_xlarge/weights && \
-    curl -L https://github.com/EnocMartinez/obsea-fish-detection/releases/download/model/12sp_1537img_xlarge_lr_0_000375_1920_best.pt \
-    --output /srv/ai4os-yolov8-torch/models/yolov8_obsea_xlarge/weights/best.pt && \
-    mkdir -p /srv/ai4os-yolov8-torch/models/yolov8_obsea_nano/weights && \
-    curl -L https://github.com/EnocMartinez/obsea-fish-detection/releases/download/model/12sp_1537img_nano_lr_0_000375_1920_best.pt \
-    --output /srv/ai4os-yolov8-torch/models/yolov8_obsea_nano/weights/best.pt
+RUN mkdir -p /srv/ai4os-yolov8-torch/models/yolov8_corals_large/weights && \
+    curl -L https://github.com/ai4os-hub/cold-coral-segmentation/releases/download/1.0.0/best.pt \
+    --output /srv/ai4os-yolov8-torch/models/yolov8_corals_large/weights/best.pt
