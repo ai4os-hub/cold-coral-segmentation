@@ -1,9 +1,9 @@
 {
     "title": "Cold coral segmentation",
-    "summary": "Cold corals segmentation model",
+    "summary": "AI-based segmentation model for detecting cold-water coral species using YOLOv8.",
     "description": [
         "cold-coral-segmentation is an application using the DEEPaaS API.\n",
-        "Cold corals segmentation model"
+        "This AI-powered segmentation model, based on YOLOv8, is designed to accurately detect and segment two vital cold-water coral species: Desmophyllum pertusum and Madrepora oculata. The model was developed by COST (IEO-CSIC)."
     ],
     "keywords": [
         "docker",
