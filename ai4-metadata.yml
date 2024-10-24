@@ -3,6 +3,22 @@ title: Cold coral segmentation
 summary: "Cold corals segmentation model"
 description: |-
   Cold corals segmentation model
+  This AI-powered segmentation model, based on YOLOv8, is designed to accurately detect and segment two vital cold-water coral species: *Desmophyllum pertusum* and *Madrepora oculata*.
+  The model was developed by COST (IEO-CSIC).
+
+  <img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/cold-coral-segmentation/main/data/model-predictions.png'/>
+  <em>Model predictions (left) and Raw image (right) for live coral species (Desmophyllum pertusum in red and Madrepora oculata in green) in a cold-water coral reef ecosystem.</em/>
+
+
+  *Acknowledgments*
+  This project received funding from multiple sources, including the European Union’s LIFE program 
+  through the LIFE IP INTEMARES project (LIFE15 IPE ES 012) and BIODIV project through the Biodiv_A3 Action. 
+  BIODIV project: “Scientific and technical advice for the monitoring of marine biodiversity: protected marine areas 
+  and species of state competence (2022–2025)”, funded by the European Union—NextGenerationEU through the Recovery, 
+  Transformation and Resilience Plan and promoted by the Directorate General for Biodiversity, Forests and 
+  Desertification of the Ministry for Ecological Transition and the Demographic Challenge{C}{C} and CSIC, 
+  through the Spanish Institute of Oceanography (IEO).
+
 # doi: http://add-some-DOI-url.com
 dates:
   created: '2024-09-27'
@@ -50,8 +66,8 @@ libraries:   # required property, uncomment together with relevant items
   # - LightGBM
   # - CatBoost
   # - Other
-#data-type:   # optional, uncomment together with relevant items
-  # - Image
+data-type:   # optional, uncomment together with relevant items
+   - Image
   # - Text
   # - Time Series
   # - Tabular
