@@ -7,7 +7,7 @@ name = "cold_coral_segmentation"
 description = "Cold corals segmentation model"
 readme = "README.md"
 requires-python = ">=3.8"
-license = { text = "Apache 2.0" }
+license = { text = "AGPL-3.0-only" }
 classifiers = [
     "Intended Audience :: Information Technology",
     "Intended Audience :: AI/ML/DL Researchers",
