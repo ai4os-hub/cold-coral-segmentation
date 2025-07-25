@@ -3,7 +3,7 @@
 
 This AI-powered segmentation model, based on YOLOv8, is designed to accurately detect and segment two vital cold-water coral species: Desmophyllum pertusum and Madrepora oculata. The model was developed by COST (IEO-CSIC).
 
-This is a container that will run the cold-coral-segmentation application leveraging the DEEP as a Service API component ([DEEPaaS API](https://github.com/ai4os/DEEPaaS)). The application is based on **ai4oshub/ai4os-yolov8-torch** module.
+This is a container that will run the cold-coral-segmentation application leveraging the DEEP as a Service API component ([DEEPaaS API](https://github.com/ai4os/DEEPaaS)). The application is based on **ai4oshub/ai4os-yolo-torch** module.
 
     
 ## Running the container
