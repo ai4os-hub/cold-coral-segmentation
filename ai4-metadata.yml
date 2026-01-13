@@ -1,25 +1,7 @@
 metadata_version: 2.0.0
 title: Cold coral segmentation
-summary: "Cold corals segmentation model"
-description: |-
-  Cold corals segmentation model: 
-  This AI-powered segmentation model, based on YOLOv8, is designed to accurately detect and segment two vital cold-water coral species: *Desmophyllum pertusum* and *Madrepora oculata*.
-  The model was developed by COST (IEO-CSIC).
-
-  <img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/cold-coral-segmentation/main/data/model-predictions.png'/>
-  
-  <em>Model predictions (left) and Raw image (right) for live coral species (Desmophyllum pertusum in red and Madrepora oculata in green) in a cold-water coral reef ecosystem.</em>
-
-
-  **Acknowledgments**
-
-  This project received funding from multiple sources, including:
-
-  * The European Union’s LIFE program through the LIFE IP INTEMARES project (LIFE15 IPE ES 012)
-  * The European Union’s BIODIV project through the Biodiv_A3 Action. BIODIV project: “Scientific and technical advice for the monitoring of marine biodiversity: protected marine areas and species of state competence (2022–2025)”, funded by the European Union—NextGenerationEU through the Recovery, Transformation and Resilience Plan and promoted by the Directorate General for Biodiversity, Forests and Desertification of the Ministry for Ecological Transition and the Demographic Challenge   
-  * CSIC, through the Spanish Institute of Oceanography (IEO).
-
-# doi: http://add-some-DOI-url.com
+summary: Cold corals segmentation model
+description: "Cold corals segmentation model: \nThis AI-powered segmentation model, based on YOLOv8, is designed to accurately detect and segment two vital cold-water coral species: *Desmophyllum pertusum* and *Madrepora oculata*.\nThe model was developed by COST (IEO-CSIC).\n\n<img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/cold-coral-segmentation/main/data/model-predictions.png'/>\n\n<em>Model predictions (left) and Raw image (right) for live coral species (Desmophyllum pertusum in red and Madrepora oculata in green) in a cold-water coral reef ecosystem.</em>\n\n\n**Acknowledgments**\n\nThis project received funding from multiple sources, including:\n\n* The European Union’s LIFE program through the LIFE IP INTEMARES project (LIFE15 IPE ES 012)\n* The European Union’s BIODIV project through the Biodiv_A3 Action. BIODIV project: “Scientific and technical advice for the monitoring of marine biodiversity: protected marine areas and species of state competence (2022–2025)”, funded by the European Union—NextGenerationEU through the Recovery, Transformation and Resilience Plan and promoted by the Directorate General for Biodiversity, Forests and Desertification of the Ministry for Ecological Transition and the Demographic Challenge   \n* CSIC, through the Spanish Institute of Oceanography (IEO)."
 dates:
   created: '2024-09-27'
   updated: '2024-09-27'
@@ -27,52 +9,18 @@ links:
   ai4_template: ai4-template-child/2.1.1
   source_code: https://github.com/ai4os-hub/cold-coral-segmentation
   docker_image: ai4oshub/cold-coral-segmentation
-  # documentation: http://add-some-documentation.com
-  # dataset: http://add-some-url-pointing-to-your-dataset.com
-  # weights: http://add-some-weights-url.com
-  # citation: http://add-some-DOI-url.com
-  # base_model: http://add-some-link-to-another-model.com
-tags:        # required property, add user-defined tags that you consider relevant
-   - deep learning
-   - vo.imagine-ai.eu
-tasks:       # required property, uncomment together with relevant items
-   - Computer Vision
-  # - Natural Language Processing
-  # - Time Series
-  # - Recommender Systems
-  # - Anomaly Detection
-  # - Regression
-  # - Classification
-  # - Clustering
-  # - Dimensionality Reduction
-  # - Generative Models
-  # - Graph Neural Networks
-  # - Optimization
-  # - Reinforcement Learning
-  # - Transfer Learning
-  # - Uncertainty Estimation
-  # - Other
-categories:  # required property, uncomment together with relevant items
-   - AI4 trainable
-   - AI4 pre trained
-   - AI4 inference
-  # - AI4 tools
-libraries:   # required property, uncomment together with relevant items
-  # - TensorFlow
-   - PyTorch
-  # - Keras
-  # - Scikit-learn
-  # - XGBoost
-  # - LightGBM
-  # - CatBoost
-  # - Other
-data-type:   # optional, uncomment together with relevant items
-   - Image
-  # - Text
-  # - Time Series
-  # - Tabular
-  # - Graph
-  # - Audio
-  # - Video
-  # - Other
-  
+  zenodo_doi: https://doi.org/10.5281/zenodo.18229687
+tags:
+- deep learning
+- vo.imagine-ai.eu
+tasks:
+- Computer Vision
+categories:
+- AI4 trainable
+- AI4 pre trained
+- AI4 inference
+libraries:
+- PyTorch
+data-type:
+- Image
+doi: 10.5281/zenodo.18229687
